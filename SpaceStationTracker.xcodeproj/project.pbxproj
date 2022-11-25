@@ -1,0 +1,835 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0343652F28F68987001D51C0 /* SpaceStationLocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C2025128F39485006C588A /* SpaceStationLocationService.swift */; };
+		0343653028F6898E001D51C0 /* SpaceStationLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C2024F28F3932F006C588A /* SpaceStationLocation.swift */; };
+		036DFFBE29300399005C9D35 /* MKMapSnapShotter+Async.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036DFFBC29300305005C9D35 /* MKMapSnapShotter+Async.swift */; };
+		03C2020B28F3924E006C588A /* SpaceStationTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C2020A28F3924E006C588A /* SpaceStationTrackerApp.swift */; };
+		03C2020D28F3924E006C588A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C2020C28F3924E006C588A /* ContentView.swift */; };
+		03C2020F28F3924F006C588A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03C2020E28F3924F006C588A /* Assets.xcassets */; };
+		03C2021328F3924F006C588A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03C2021228F3924F006C588A /* Preview Assets.xcassets */; };
+		03C2021D28F3924F006C588A /* SpaceStationTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C2021C28F3924F006C588A /* SpaceStationTrackerTests.swift */; };
+		03C2022728F3924F006C588A /* SpaceStationTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C2022628F3924F006C588A /* SpaceStationTrackerUITests.swift */; };
+		03C2022928F3924F006C588A /* SpaceStationTrackerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C2022828F3924F006C588A /* SpaceStationTrackerUITestsLaunchTests.swift */; };
+		03C2023C28F39280006C588A /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03C2023B28F39280006C588A /* WidgetKit.framework */; };
+		03C2023E28F39280006C588A /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03C2023D28F39280006C588A /* SwiftUI.framework */; };
+		03C2024128F39280006C588A /* SpaceStationTrackerWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C2024028F39280006C588A /* SpaceStationTrackerWidget.swift */; };
+		03C2024428F39280006C588A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03C2024328F39280006C588A /* Assets.xcassets */; };
+		03C2024628F39280006C588A /* SpaceStationTrackerWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 03C2024228F39280006C588A /* SpaceStationTrackerWidget.intentdefinition */; };
+		03C2024728F39280006C588A /* SpaceStationTrackerWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 03C2024228F39280006C588A /* SpaceStationTrackerWidget.intentdefinition */; };
+		03C2024A28F39280006C588A /* SpaceStationTrackerWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 03C2023928F39280006C588A /* SpaceStationTrackerWidgetExtension.appex */; platformFilter = ios; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		03C2025028F3932F006C588A /* SpaceStationLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C2024F28F3932F006C588A /* SpaceStationLocation.swift */; };
+		03C2025228F39485006C588A /* SpaceStationLocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C2025128F39485006C588A /* SpaceStationLocationService.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		03C2021928F3924F006C588A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 03C201FF28F3924E006C588A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 03C2020628F3924E006C588A;
+			remoteInfo = SpaceStationTracker;
+		};
+		03C2022328F3924F006C588A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 03C201FF28F3924E006C588A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 03C2020628F3924E006C588A;
+			remoteInfo = SpaceStationTracker;
+		};
+		03C2024828F39280006C588A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 03C201FF28F3924E006C588A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 03C2023828F39280006C588A;
+			remoteInfo = SpaceStationTrackerWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		03C2024E28F39280006C588A /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				03C2024A28F39280006C588A /* SpaceStationTrackerWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		036DFFBC29300305005C9D35 /* MKMapSnapShotter+Async.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MKMapSnapShotter+Async.swift"; sourceTree = "<group>"; };
+		0374AF9F2931567A00011C1F /* readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = readme.md; sourceTree = "<group>"; };
+		03C2020728F3924E006C588A /* SpaceStationTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceStationTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		03C2020A28F3924E006C588A /* SpaceStationTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceStationTrackerApp.swift; sourceTree = "<group>"; };
+		03C2020C28F3924E006C588A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		03C2020E28F3924F006C588A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		03C2021028F3924F006C588A /* SpaceStationTracker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SpaceStationTracker.entitlements; sourceTree = "<group>"; };
+		03C2021228F3924F006C588A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		03C2021828F3924F006C588A /* SpaceStationTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpaceStationTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		03C2021C28F3924F006C588A /* SpaceStationTrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceStationTrackerTests.swift; sourceTree = "<group>"; };
+		03C2022228F3924F006C588A /* SpaceStationTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpaceStationTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		03C2022628F3924F006C588A /* SpaceStationTrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceStationTrackerUITests.swift; sourceTree = "<group>"; };
+		03C2022828F3924F006C588A /* SpaceStationTrackerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceStationTrackerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		03C2023928F39280006C588A /* SpaceStationTrackerWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SpaceStationTrackerWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		03C2023B28F39280006C588A /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		03C2023D28F39280006C588A /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		03C2024028F39280006C588A /* SpaceStationTrackerWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceStationTrackerWidget.swift; sourceTree = "<group>"; };
+		03C2024228F39280006C588A /* SpaceStationTrackerWidget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = SpaceStationTrackerWidget.intentdefinition; sourceTree = "<group>"; };
+		03C2024328F39280006C588A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		03C2024528F39280006C588A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03C2024F28F3932F006C588A /* SpaceStationLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceStationLocation.swift; sourceTree = "<group>"; };
+		03C2025128F39485006C588A /* SpaceStationLocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceStationLocationService.swift; sourceTree = "<group>"; };
+		03E1102128F3FC74009F48C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		03C2020428F3924E006C588A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03C2021528F3924F006C588A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03C2021F28F3924F006C588A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03C2023628F39280006C588A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03C2023E28F39280006C588A /* SwiftUI.framework in Frameworks */,
+				03C2023C28F39280006C588A /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0343653128F6899B001D51C0 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				03C2024F28F3932F006C588A /* SpaceStationLocation.swift */,
+				03C2025128F39485006C588A /* SpaceStationLocationService.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		03C201FE28F3924E006C588A = {
+			isa = PBXGroup;
+			children = (
+				0374AF9F2931567A00011C1F /* readme.md */,
+				03C2020928F3924E006C588A /* SpaceStationTracker */,
+				03C2021B28F3924F006C588A /* SpaceStationTrackerTests */,
+				03C2022528F3924F006C588A /* SpaceStationTrackerUITests */,
+				03C2023F28F39280006C588A /* SpaceStationTrackerWidget */,
+				03C2023A28F39280006C588A /* Frameworks */,
+				03C2020828F3924E006C588A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		03C2020828F3924E006C588A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				03C2020728F3924E006C588A /* SpaceStationTracker.app */,
+				03C2021828F3924F006C588A /* SpaceStationTrackerTests.xctest */,
+				03C2022228F3924F006C588A /* SpaceStationTrackerUITests.xctest */,
+				03C2023928F39280006C588A /* SpaceStationTrackerWidgetExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		03C2020928F3924E006C588A /* SpaceStationTracker */ = {
+			isa = PBXGroup;
+			children = (
+				03E1102128F3FC74009F48C1 /* Info.plist */,
+				03C2020A28F3924E006C588A /* SpaceStationTrackerApp.swift */,
+				03C2020C28F3924E006C588A /* ContentView.swift */,
+				03C2020E28F3924F006C588A /* Assets.xcassets */,
+				03C2021028F3924F006C588A /* SpaceStationTracker.entitlements */,
+				03C2021128F3924F006C588A /* Preview Content */,
+				0343653128F6899B001D51C0 /* Shared */,
+			);
+			path = SpaceStationTracker;
+			sourceTree = "<group>";
+		};
+		03C2021128F3924F006C588A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				03C2021228F3924F006C588A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		03C2021B28F3924F006C588A /* SpaceStationTrackerTests */ = {
+			isa = PBXGroup;
+			children = (
+				03C2021C28F3924F006C588A /* SpaceStationTrackerTests.swift */,
+			);
+			path = SpaceStationTrackerTests;
+			sourceTree = "<group>";
+		};
+		03C2022528F3924F006C588A /* SpaceStationTrackerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				03C2022628F3924F006C588A /* SpaceStationTrackerUITests.swift */,
+				03C2022828F3924F006C588A /* SpaceStationTrackerUITestsLaunchTests.swift */,
+			);
+			path = SpaceStationTrackerUITests;
+			sourceTree = "<group>";
+		};
+		03C2023A28F39280006C588A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				03C2023B28F39280006C588A /* WidgetKit.framework */,
+				03C2023D28F39280006C588A /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		03C2023F28F39280006C588A /* SpaceStationTrackerWidget */ = {
+			isa = PBXGroup;
+			children = (
+				03C2024028F39280006C588A /* SpaceStationTrackerWidget.swift */,
+				036DFFBC29300305005C9D35 /* MKMapSnapShotter+Async.swift */,
+				03C2024228F39280006C588A /* SpaceStationTrackerWidget.intentdefinition */,
+				03C2024328F39280006C588A /* Assets.xcassets */,
+				03C2024528F39280006C588A /* Info.plist */,
+			);
+			path = SpaceStationTrackerWidget;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		03C2020628F3924E006C588A /* SpaceStationTracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03C2022C28F3924F006C588A /* Build configuration list for PBXNativeTarget "SpaceStationTracker" */;
+			buildPhases = (
+				03C2020328F3924E006C588A /* Sources */,
+				03C2020428F3924E006C588A /* Frameworks */,
+				03C2020528F3924E006C588A /* Resources */,
+				03C2024E28F39280006C588A /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				03C2024928F39280006C588A /* PBXTargetDependency */,
+			);
+			name = SpaceStationTracker;
+			productName = SpaceStationTracker;
+			productReference = 03C2020728F3924E006C588A /* SpaceStationTracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		03C2021728F3924F006C588A /* SpaceStationTrackerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03C2022F28F3924F006C588A /* Build configuration list for PBXNativeTarget "SpaceStationTrackerTests" */;
+			buildPhases = (
+				03C2021428F3924F006C588A /* Sources */,
+				03C2021528F3924F006C588A /* Frameworks */,
+				03C2021628F3924F006C588A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				03C2021A28F3924F006C588A /* PBXTargetDependency */,
+			);
+			name = SpaceStationTrackerTests;
+			productName = SpaceStationTrackerTests;
+			productReference = 03C2021828F3924F006C588A /* SpaceStationTrackerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		03C2022128F3924F006C588A /* SpaceStationTrackerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03C2023228F3924F006C588A /* Build configuration list for PBXNativeTarget "SpaceStationTrackerUITests" */;
+			buildPhases = (
+				03C2021E28F3924F006C588A /* Sources */,
+				03C2021F28F3924F006C588A /* Frameworks */,
+				03C2022028F3924F006C588A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				03C2022428F3924F006C588A /* PBXTargetDependency */,
+			);
+			name = SpaceStationTrackerUITests;
+			productName = SpaceStationTrackerUITests;
+			productReference = 03C2022228F3924F006C588A /* SpaceStationTrackerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		03C2023828F39280006C588A /* SpaceStationTrackerWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03C2024B28F39280006C588A /* Build configuration list for PBXNativeTarget "SpaceStationTrackerWidgetExtension" */;
+			buildPhases = (
+				03C2023528F39280006C588A /* Sources */,
+				03C2023628F39280006C588A /* Frameworks */,
+				03C2023728F39280006C588A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SpaceStationTrackerWidgetExtension;
+			productName = SpaceStationTrackerWidgetExtension;
+			productReference = 03C2023928F39280006C588A /* SpaceStationTrackerWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		03C201FF28F3924E006C588A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					03C2020628F3924E006C588A = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					03C2021728F3924F006C588A = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 03C2020628F3924E006C588A;
+					};
+					03C2022128F3924F006C588A = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 03C2020628F3924E006C588A;
+					};
+					03C2023828F39280006C588A = {
+						CreatedOnToolsVersion = 14.1;
+					};
+				};
+			};
+			buildConfigurationList = 03C2020228F3924E006C588A /* Build configuration list for PBXProject "SpaceStationTracker" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 03C201FE28F3924E006C588A;
+			productRefGroup = 03C2020828F3924E006C588A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				03C2020628F3924E006C588A /* SpaceStationTracker */,
+				03C2021728F3924F006C588A /* SpaceStationTrackerTests */,
+				03C2022128F3924F006C588A /* SpaceStationTrackerUITests */,
+				03C2023828F39280006C588A /* SpaceStationTrackerWidgetExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		03C2020528F3924E006C588A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03C2021328F3924F006C588A /* Preview Assets.xcassets in Resources */,
+				03C2020F28F3924F006C588A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03C2021628F3924F006C588A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03C2022028F3924F006C588A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03C2023728F39280006C588A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03C2024428F39280006C588A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		03C2020328F3924E006C588A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03C2024728F39280006C588A /* SpaceStationTrackerWidget.intentdefinition in Sources */,
+				03C2025028F3932F006C588A /* SpaceStationLocation.swift in Sources */,
+				03C2025228F39485006C588A /* SpaceStationLocationService.swift in Sources */,
+				03C2020D28F3924E006C588A /* ContentView.swift in Sources */,
+				03C2020B28F3924E006C588A /* SpaceStationTrackerApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03C2021428F3924F006C588A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03C2021D28F3924F006C588A /* SpaceStationTrackerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03C2021E28F3924F006C588A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03C2022728F3924F006C588A /* SpaceStationTrackerUITests.swift in Sources */,
+				03C2022928F3924F006C588A /* SpaceStationTrackerUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03C2023528F39280006C588A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0343653028F6898E001D51C0 /* SpaceStationLocation.swift in Sources */,
+				036DFFBE29300399005C9D35 /* MKMapSnapShotter+Async.swift in Sources */,
+				03C2024128F39280006C588A /* SpaceStationTrackerWidget.swift in Sources */,
+				03C2024628F39280006C588A /* SpaceStationTrackerWidget.intentdefinition in Sources */,
+				0343652F28F68987001D51C0 /* SpaceStationLocationService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		03C2021A28F3924F006C588A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 03C2020628F3924E006C588A /* SpaceStationTracker */;
+			targetProxy = 03C2021928F3924F006C588A /* PBXContainerItemProxy */;
+		};
+		03C2022428F3924F006C588A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 03C2020628F3924E006C588A /* SpaceStationTracker */;
+			targetProxy = 03C2022328F3924F006C588A /* PBXContainerItemProxy */;
+		};
+		03C2024928F39280006C588A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			platformFilter = ios;
+			target = 03C2023828F39280006C588A /* SpaceStationTrackerWidgetExtension */;
+			targetProxy = 03C2024828F39280006C588A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		03C2022A28F3924F006C588A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		03C2022B28F3924F006C588A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		03C2022D28F3924F006C588A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SpaceStationTracker/SpaceStationTracker.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SpaceStationTracker/Preview Content\"";
+				DEVELOPMENT_TEAM = L4WMJSL77G;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SpaceStationTracker/Info.plist;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.josh.SpaceStationTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		03C2022E28F3924F006C588A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SpaceStationTracker/SpaceStationTracker.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SpaceStationTracker/Preview Content\"";
+				DEVELOPMENT_TEAM = L4WMJSL77G;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SpaceStationTracker/Info.plist;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.josh.SpaceStationTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		03C2023028F3924F006C588A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L4WMJSL77G;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.josh.SpaceStationTrackerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpaceStationTracker.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SpaceStationTracker";
+			};
+			name = Debug;
+		};
+		03C2023128F3924F006C588A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L4WMJSL77G;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.josh.SpaceStationTrackerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpaceStationTracker.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SpaceStationTracker";
+			};
+			name = Release;
+		};
+		03C2023328F3924F006C588A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L4WMJSL77G;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.josh.SpaceStationTrackerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SpaceStationTracker;
+			};
+			name = Debug;
+		};
+		03C2023428F3924F006C588A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L4WMJSL77G;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.josh.SpaceStationTrackerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SpaceStationTracker;
+			};
+			name = Release;
+		};
+		03C2024C28F39280006C588A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L4WMJSL77G;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SpaceStationTrackerWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SpaceStationTrackerWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.josh.SpaceStationTracker.SpaceStationTrackerWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		03C2024D28F39280006C588A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L4WMJSL77G;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SpaceStationTrackerWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SpaceStationTrackerWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.josh.SpaceStationTracker.SpaceStationTrackerWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		03C2020228F3924E006C588A /* Build configuration list for PBXProject "SpaceStationTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03C2022A28F3924F006C588A /* Debug */,
+				03C2022B28F3924F006C588A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		03C2022C28F3924F006C588A /* Build configuration list for PBXNativeTarget "SpaceStationTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03C2022D28F3924F006C588A /* Debug */,
+				03C2022E28F3924F006C588A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		03C2022F28F3924F006C588A /* Build configuration list for PBXNativeTarget "SpaceStationTrackerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03C2023028F3924F006C588A /* Debug */,
+				03C2023128F3924F006C588A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		03C2023228F3924F006C588A /* Build configuration list for PBXNativeTarget "SpaceStationTrackerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03C2023328F3924F006C588A /* Debug */,
+				03C2023428F3924F006C588A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		03C2024B28F39280006C588A /* Build configuration list for PBXNativeTarget "SpaceStationTrackerWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03C2024C28F39280006C588A /* Debug */,
+				03C2024D28F39280006C588A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 03C201FF28F3924E006C588A /* Project object */;
+}
